@@ -2,13 +2,8 @@
 #include <vector>
 #include <map>
 #include <algorithm>
-#include <iostream>
 
 using namespace std;
-bool cmp(const pair<string, int>& p1, const pair<string, int>& p2)
-{
-    return p1.second>p2.second;
-}
 
 void dfs(const string& order, vector<bool> v, const vector<int>& course, string tmp, map<string, int>& m)
 {
